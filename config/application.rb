@@ -6,11 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-<<<<<<< HEAD
 module Shorty
-=======
-module AnimURL
->>>>>>> e1300e07a14ae0905d9e799c800d5875b5a02a1a
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
