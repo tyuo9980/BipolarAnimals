@@ -39,3 +39,10 @@ Processing by UrlsController#show as HTML
   [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
 Redirected to http://google.ca
 Completed 302 Found in 35ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-14 18:03:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UrlsController#new as HTML
+  Rendered urls/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 582ms (Views: 569.9ms | ActiveRecord: 0.3ms)
