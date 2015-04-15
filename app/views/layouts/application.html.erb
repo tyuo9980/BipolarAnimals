@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Shorty</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <head>
+        <title>Bipolar Animals</title>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
 
-<% if flash[:animurl].present? %>
-  <p class='shortened-link'>
-    Your URL: 
-    <%= root_url + flash[:animurl].to_s %>
-  </p>
-<% end %>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    </head>
 
-<%= yield %>
+    <body>
 
-</body>
+        <%= yield %>
+
+    </body>
 </html>

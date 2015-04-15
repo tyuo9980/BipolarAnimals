@@ -13,3 +13,73 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+    background: -webkit-radial-gradient(left top, ellipse farthest-corner, #FFFFFF 0%, #C8D2E9 100%) no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Open Sans", Georgia, Serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.animurl{
+    text-align: center;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.content{
+    width: 800px;
+    height: 100%;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.fields{
+    margin: auto;
+    float: left;
+}
+
+.buttons{
+    margin: auto;
+    float:right;
+}
+
+.submit{
+
+
+    border: 0 none;
+    border-radius: 2px 2px 2px 2px;
+
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+
+    padding: 7px 10px;
+    text-transform: none;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+
+    width: 94px; 
+    height: 36px;
+
+    background: none repeat scroll 0 0 #444444;
+}
+
+.submit.hover{
+    background: none repeat scroll 0 0 #2DB6CF;
+    color: #fff;
+}
+
+
+.textfield{
+    width: 700px;
+    height: 30px;
+    font-size: 12pt;
+}

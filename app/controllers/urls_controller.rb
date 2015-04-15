@@ -5,7 +5,7 @@ class UrlsController < ApplicationController
  
   def create
     @counter = 0
-    @limit = 5
+    @limit = 10 #378378 total possibilities -> 99 * 98 * 39
 
     loop do
       @animal = Animal.order("RANDOM()").pluck("animal").first
@@ -20,7 +20,7 @@ class UrlsController < ApplicationController
         render :action => "new"
       end
 
-      counter += 1
+      @counter += 1
     end
 
     @url = params[:url][:url]
