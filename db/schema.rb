@@ -11,13 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150414215608) do
+ActiveRecord::Schema.define(version: 20150415174100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "adjectives", force: :cascade do |t|
+    t.string   "adjective",  null: false
+    t.string   "kind",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "animals", force: :cascade do |t|
+    t.string   "animal",     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "urls", force: :cascade do |t|
     t.string   "url",        null: false
+    t.string   "animurl",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

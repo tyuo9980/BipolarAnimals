@@ -8,10 +8,10 @@
 </head>
 <body>
 
-<% if flash[:shortened_id].present? %>
+<% if flash[:animurl].present? %>
   <p class='shortened-link'>
     Your URL: 
-    <%= url_url(flash[:shortened_id]) %>
+    <%= root_url + flash[:animurl].to_s %>
   </p>
 <% end %>
 
