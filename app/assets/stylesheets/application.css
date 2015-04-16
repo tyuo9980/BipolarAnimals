@@ -14,26 +14,39 @@
  *= require_self
  */
 
-body{
+html{
     background: -webkit-radial-gradient(left top, ellipse farthest-corner, #FFFFFF 0%, #C8D2E9 100%) no-repeat center center fixed;
-    background-size: cover;
     font-family: "Open Sans", Georgia, Serif;
+    height: 100%;
+}
+
+body{
+    top: 25%;
+    position: relative;
 }
 
 h1{
     text-align: center;
 }
 
-.animurl{
-    text-align: center;
-    border-radius: 2px 2px 2px 2px;
+.content{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.content{
-    width: 800px;
-    height: 100%;
-    margin: auto;
-    margin-top: 200px;
+.clear{
+    clear: both;
+}
+
+.error{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.animurl{
+    margin-top: 20px;
+    text-align: center;
 }
 
 .fields{
@@ -47,8 +60,6 @@ h1{
 }
 
 .submit{
-
-
     border: 0 none;
     border-radius: 2px 2px 2px 2px;
 
@@ -77,9 +88,8 @@ h1{
     color: #fff;
 }
 
-
 .textfield{
-    width: 700px;
+    width: 500px;
     height: 30px;
     font-size: 12pt;
 }

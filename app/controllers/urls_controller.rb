@@ -25,6 +25,10 @@ class UrlsController < ApplicationController
 
     @url = params[:url][:url]
 
+    if (@url.index("http://") == nil && @url.index("https://") == nil)
+      @url = "http://" + @url
+    end
+
     @shortened_url = Url.new(:url => @url, :animurl => @animurl)
     if @shortened_url.save
       flash[:animurl] = @shortened_url.animurl
@@ -37,11 +41,5 @@ class UrlsController < ApplicationController
   def show
     @shortened_url = Url.where(:animurl => params[:id]).first
     redirect_to(@shortened_url.url)
-  end
-
-  private
-
-  def url_params
-    params.require(:url).permit(:url)
   end
 end
