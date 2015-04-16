@@ -25,7 +25,7 @@ class UrlsController < ApplicationController
 
     @url = params[:url][:url]
 
-    if (@url.index("http://") == nil && @url.index("https://") == nil)
+    if (@url.index("http://") == nil && @url.index("https://") == nil && @url != "")
       @url = "http://" + @url
     end
 
